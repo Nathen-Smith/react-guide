@@ -12,7 +12,7 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 
 ## Coding
 #### JavaScript
-You can use class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use functional JS (include "ES6" when looking for documentation). Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator for displaying certain things like ), hooks, how to export functions. Brackets may be annoying, but you can do nice stuff with curly braces. 
+You can use class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use functional JS (include "ES6" when looking for documentation). Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), hooks, how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces. 
 #### HTML
 Should be pretty intuitive and won't require much work here, main difference here is you often do not need to worry about classes if you want to, just use Bootstrap https://react-bootstrap.github.io/getting-started/introduction to take care of things e.g. 
 ```javascript 
