@@ -36,4 +36,4 @@ Let Bootstrap do the heavy lifting. And if you want to implement some complex fe
 
 Use Font Awesome React https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react for icons.
 
-“Good artists copy, great artists steal”—take other people’s CSS >:)
+“Good artists copy, great artists steal”—so take other people’s CSS >:)
