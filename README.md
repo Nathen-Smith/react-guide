@@ -26,7 +26,7 @@ vs
 ```javascript
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 ```
-Plus, Bootstrap comes with nice pre-made styles. Also remember to use Inspect Elements to help debug!
+Plus, Bootstrap comes with nice pre-made styles. Also remember to use Inspect Elements to help debug! If you want to change the background color, modify public/index.html (also where you change favicon and other things.
 #### CSS
 Don’t go down a rabbit hole. Just keep things simple at first and use ```className```!!! Using something like
 ```javascript
