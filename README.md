@@ -34,7 +34,11 @@ Don’t go down a rabbit hole. Just keep things simple at first and use ```class
 ```
 can be done but it is very annoying—lacks auto suggestion and things like rgba (there is a workaround but it is ugly). In short, only use inline if absolutely necessary. Here is an example: https://github.com/Nathen-Smith/personal-site/blob/main/src/components/Links.js#L61-L73. If you are wrestling with styling, be aware of !important, overriding, and try using Inspect Element to see if any styling is crossed out.
 ## General Tips
-It is best to go in with a plan of what you’re going to make and try to foresee issues and develop ways to ensure that you Do not Repeat Yourself (DRY). Use custom CSS last, those are small details usually and you probably will not need to do much for formatting with CSS (just like art save details for last). HTML is where the formatting is and will be the majority of your code. 
+It is best to go in with a plan of what you’re going to make and try to foresee issues and develop ways to ensure that you Do not Repeat Yourself (DRY). Sometimes though, it takes less time (and brainpower) to use any fancy feature, specifically for code readability or trying to keep things short. Remember to not optimize last, if you even need to. 
+
+Use virtual environment.
+
+Use custom CSS last, those are small details usually and you probably will not need to do much for formatting with CSS (just like art save details for last). HTML is where the formatting is and will be the majority of your code. 
 
 Let Bootstrap do the heavy lifting. And if you want to implement some complex features, look for good libraries first, or make your own hook e.g. https://github.com/Nathen-Smith/personal-site/blob/main/src/shared-hooks/useScreenType.js (credit to benawad). If you want to implement anything with transforming, transitions, it probably is CSS but you can also do a lot with JS. When you’re stackoverflow-ing you probably will search for a JS solution first.
 
