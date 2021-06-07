@@ -35,7 +35,7 @@ Don’t go down a rabbit hole. Just keep things simple at first and use ```class
 ```javascript
 <div style={{backgroundColor:"#F0DB4F", width:"100%"}}> 
 ```
-can be done but it is very annoying—lacks auto suggestion and things like rgba (there is a workaround but it is ugly). In short, only use inline if absolutely necessary. Here is an example: https://github.com/Nathen-Smith/personal-site/blob/main/src/components/Links.js#L61-L73. If you are wrestling with styling, be aware of !important, overriding, and try using Inspect Element to see if any styling is crossed out.
+can be done but it is very annoying—lacks auto suggestion and things like rgba (there is a workaround but it is ugly). In short, only use inline if absolutely necessary. Here is an example: https://github.com/Nathen-Smith/personal-site/blob/main/src/components/Links.js#L51-L61. If you are wrestling with styling, be aware of !important, overriding, and try using Inspect Element to see if any styling is crossed out.
 ## General Tips
 It is best to go in with a plan of what you’re going to make and try to foresee issues and develop ways to ensure that you Do not Repeat Yourself (DRY). Sometimes though, it takes less time (and brainpower) to use any fancy feature, specifically for code readability or trying to keep things short. Remember to not optimize last, if you even need to. 
 
