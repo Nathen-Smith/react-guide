@@ -10,6 +10,9 @@ Configure deployment: https://create-react-app.dev/docs/deployment/
 Support mobile viewing (one liner!)
 https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 
+Support smooth scrolling
+https://gomakethings.com/smooth-scrolling-links-with-only-css/
+
 ## Coding
 #### JavaScript
 You can use class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use functional JS (include "ES6" when looking for documentation). Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), hooks, how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces (interpolation). Some more links:
