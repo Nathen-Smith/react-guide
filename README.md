@@ -3,7 +3,8 @@
 ## Creating
 https://reactjs.org/docs/create-a-new-react-app.html
 
-Configure deployment: https://create-react-app.dev/docs/deployment/
+Configure deployment: https://create-react-app.dev/docs/deployment/ keep 
+```"deploy": "gh-pages -d build",```
 
 (RECOMMENDED) Change favicon, aka the icon that you see on the tab of your website: https://stackoverflow.com/questions/18301745/how-to-set-up-a-favicon
 
