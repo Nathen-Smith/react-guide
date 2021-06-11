@@ -16,6 +16,9 @@ https://gomakethings.com/smooth-scrolling-links-with-only-css/
 Clean up boiler plate code
 https://www.youtube.com/watch?v=hT3j87FMR6M&t=435s
 
+Dependency Check
+https://www.npmjs.com/package/depcheck
+
 ## Coding
 #### JavaScript
 You can use class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use functional JS (include "ES6" when looking for documentation). Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), hooks, how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces (interpolation). Some more links:
