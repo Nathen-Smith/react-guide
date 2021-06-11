@@ -14,7 +14,7 @@ Support smooth scrolling
 https://gomakethings.com/smooth-scrolling-links-with-only-css/
 
 Clean up boiler plate code
-https://www.youtube.com/watch?v=hT3j87FMR6M&t=435s
+https://www.youtube.com/watch?v=hT3j87FMR6M&t=435s https://www.youtube.com/watch?v=hT3j87FMR6M&t=1290s
 
 Dependency Check
 https://www.npmjs.com/package/depcheck
