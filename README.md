@@ -58,3 +58,5 @@ Let Bootstrap do the heavy lifting. And if you want to implement some complex fe
 Use Font Awesome React https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react for icons.
 
 “Good artists copy, great artists steal”—so take other people’s CSS >:)
+
+Check https://search.google.com/test/mobile-friendly to quickly verify if your website is mobile-friendly
