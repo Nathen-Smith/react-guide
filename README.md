@@ -1,62 +1,77 @@
 # React App Guide
+Get started into Frontend Web Development with React!
 
-## Creating
-https://reactjs.org/docs/create-a-new-react-app.html
+## Table of Contents
+1. [Introduction](#introduction)
+1. [Environment Setup](#environment-setup)
+2. [Creating](#creating)
+3. [Coding](#coding)
+4. [General Tips](#general-tips)
 
-Configure deployment: https://create-react-app.dev/docs/deployment/ keep 
-```"deploy": "gh-pages -d build",```
+## Introduction<a name="introduction"></a>
+In this guide I will cover everything needed to design and deploy a web app using React. React is a free and open-source JavaScript library, makes it easy to use HTML and JavaScript with what is called JSX, and it is the most popular Web framework according to Stack Overflow Developer Survey 2021. 
 
-(RECOMMENDED) Change favicon, aka the icon that you see on the tab of your website: https://stackoverflow.com/questions/18301745/how-to-set-up-a-favicon
+## Environment Setup<a name="environment-setup"></a>
+Install <a href="https://git-scm.com/">git</a>, <a href="https://nodejs.org/en/">Node.js</a>, and <a href="https://classic.yarnpkg.com/en/docs/install/#windows-stable">Yarn</a>. Git is used for version control, Node.js is a JavaScript runtime environment that runs JavaScript outside of the web browser, and Yarn is a dependency manager and will be used over npm.
 
-Support mobile viewing (one liner!)
-https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
+## Creating<a name="creating"></a>
+Open a terminal, if using VSCode as the IDE here is a shortcut: ```Ctrl```+```~```
 
-Support smooth scrolling
-https://gomakethings.com/smooth-scrolling-links-with-only-css/
+Then run
+```shell
+npx create-react-app <NAME_OF_APP>
+cd <NAME_OF_APP>
+yarn start
+```
+with replacing <NAME_OF_APP> with whatever you want the folder to be called. This will open up a tab in your browser at ```localhost:3000```. Now you can clean up the boiler plate code, or just start coding. Now would be a good point to add this folder to a GitHub repository.
 
 Clean up boiler plate code
 https://www.youtube.com/watch?v=hT3j87FMR6M&t=435s https://www.youtube.com/watch?v=hT3j87FMR6M&t=1290s
 
-Dependency Check
-https://www.npmjs.com/package/depcheck
+Configure deployment: https://create-react-app.dev/docs/deployment/ keep 
+```"deploy": "gh-pages -d build",```
 
-## Coding
+(RECOMMENDED) Change favicon i.e. the icon that you see on the tab of your website: https://stackoverflow.com/questions/18301745/how-to-set-up-a-favicon
 
-Use https://medium.com/swlh/demystifying-the-folder-structure-of-a-react-app-c60b29d90836 as a guide for naming conventions.
+## Coding<a name="coding"></a>
+
+Before coding, one should view all of the files present. Understanding index.html, index.js, package.json are important; however, you will only work with package.json most likely (for dependencies).
 
 #### JavaScript
-You can use class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use functional JS (include "ES6" when looking for documentation). Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), hooks, how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces (interpolation). Some more links:
+This is the only true coding part, and will not be too complex considering this is a guide purely for front-end.
+
+You can use React class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use Functional Components in React. Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), hooks, how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces (interpolation). Some more links:
 
 https://itnext.io/what-is-props-and-how-to-use-it-in-react-da307f500da0
 
 https://reactjs.org/docs/hooks-state.html
-#### HTML
-Should be pretty intuitive and won't require much work here, main difference here is you often do not need to worry about classes if you want to, just use Bootstrap https://react-bootstrap.github.io/getting-started/introduction to take care of things e.g. 
+#### JSX(HTML)
+Coding this part is usually not too difficult, but will involve some research on best practices e.g. alt text for images and not using button for navigation links (credit to @EddyVinckk) and reading through documentation. To make things look nice, use Material UI. You will have to run ```yarn add @material-ui/core``` followed by ```yarn``` in the base folder of the app(with package.json) which will be the same process for adding dependencies. Running ```yarn add -D @types/<DEPENDENCY_NAME>``` may be needed to help VSCode recognize the types in the dependency. Here is an example of Material UI.
 ```javascript 
-<Navbar bg="light" expand="lg">
+<AppBar position="static" color="primary">
+  <Typography variant="h6" noWrap>
+    Material-UI
+  </Typography>
+</AppBar>
 ``` 
-vs 
-```javascript
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-```
-Plus, Bootstrap comes with nice pre-made styles. Also remember to use Inspect Elements to help debug! If you want to change the background color, modify public/index.html (also where you change favicon and other things.
+If you want to change the background color, modify public/index.html (also where you change favicon).
 #### CSS
-Don’t go down a rabbit hole. Just keep things simple at first and use ```className```!!! Using something like
+Keep things simple at first and use ```className```!! Using something like
 ```javascript
 <div style={{backgroundColor:"#F0DB4F", width:"100%"}}> 
 ```
-can be done but it is very annoying—lacks auto suggestion and things like rgba (there is a workaround but it is ugly). In short, only use inline if absolutely necessary. Here is an example: https://github.com/Nathen-Smith/personal-site/blob/main/src/components/Links.js#L51-L61. If you are wrestling with styling, be aware of !important, overriding, and try using Inspect Element to see if any styling is crossed out.
-## General Tips
-It is best to go in with a plan of what you’re going to make and try to foresee issues and develop ways to ensure that you Do not Repeat Yourself (DRY). Sometimes though, it takes less time (and brainpower) to use any fancy feature, specifically for code readability or trying to keep things short. Remember to not optimize last, if you even need to. 
+can be done but it is very annoying—lacks auto suggestion and makes the JSX crowded. If you are wrestling with styling, be aware of !important, overriding, and try using Inspect Element to see if any styling is crossed out.
+## General Tips<a name="general-tips"></a>
+It is best to go in with a plan of what you’re going to make and try to foresee issues and develop ways to ensure that you Do not Repeat Yourself (DRY). Sometimes though, it takes less time (and brainpower) to use any fancy feature, specifically for code readability or trying to keep things short.
 
-Use virtual environment.
+Use custom CSS last, those are small details usually and you probably will not need to do much for formatting with CSS. HTML is where the formatting is and will be the majority of your code. 
 
-Use custom CSS last, those are small details usually and you probably will not need to do much for formatting with CSS (just like art save details for last). HTML is where the formatting is and will be the majority of your code. 
-
-Let Bootstrap do the heavy lifting. And if you want to implement some complex features, look for good libraries first, or make your own hook e.g. https://github.com/Nathen-Smith/personal-site/blob/main/src/shared-hooks/useScreenType.js (credit to benawad). If you want to implement anything with transforming, transitions, it probably is CSS but you can also do a lot with JS. When you’re stackoverflow-ing you probably will search for a JS solution first.
+Let Material UI or other UI framworks like Bootstrap do the heavy lifting. And if you want to implement some complex features, look for good libraries first. If you want to implement anything with transforming, transitions, it probably is CSS but you can also do a lot with JS. When you’re stackoverflow-ing you probably will search for a JS solution first.
 
 Use Font Awesome React https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react for icons.
 
 “Good artists copy, great artists steal”—so take other people’s CSS >:)
 
 Check https://search.google.com/test/mobile-friendly to quickly verify if your website is mobile-friendly
+
+Use https://medium.com/swlh/demystifying-the-folder-structure-of-a-react-app-c60b29d90836 as a guide for naming conventions in folders, but this is not necessary until there is substantial complexity.
