@@ -40,7 +40,7 @@ Before coding, one should view all of the files present. Understanding index.htm
 #### JavaScript
 This is the only true coding part, and will not be too complex considering this is a guide purely for front-end.
 
-You can use React class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. I, and others, recommend and use Functional Components in React. Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), hooks, how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces (interpolation). Some more links:
+You can use React class components, but it can be hard to understand e.g. that ```setState()``` will cause a re-render, and it is more code. Functional components and React hooks are easier to understand and well documented. Learn arrow functions, ```var```,```let```,```const``` (good to use const and Conditional (ternary) operator instead of returns nested in if blocks), how to export functions. Brackets and parantheses may be annoying, but you can do nice stuff with curly braces (interpolation). Some more links:
 
 https://itnext.io/what-is-props-and-how-to-use-it-in-react-da307f500da0
 
