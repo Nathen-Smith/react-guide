@@ -19,7 +19,7 @@ Open a terminal, if using VSCode as the IDE here is a shortcut: ```Ctrl```+```~`
 
 Then run
 ```shell
-npx create-react-app <NAME_OF_APP>
+yarn create react-app <NAME_OF_APP>
 cd <NAME_OF_APP>
 yarn start
 ```
